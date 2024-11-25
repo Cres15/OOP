@@ -1,24 +1,25 @@
-public class Staff extends Person{
-    String school;
-    float salary;
+public class Student extends Person{
+    String program;
+    int year;
  
-    Staff(String name, String address, String school, float salary ){
-        this.name = name;
-        this.address = address;
-        this.school = school;
-        this.salary = salary;
+    Student(String name, String address, String program, int year){
+    this.name = name;
+    this.address = address;
+    this.program = program;
+    this.year = year;
     }
-        void setschool(String s_school){
-            this.school = s_school;
-        }
-        void setsalary(float s_salary){
-            this.salary = s_salary;
-        }
  
-        public String getSchool(){
-            return school;
-        }
-        public float getSalary(){
-            return salary;
-        }
+    void setprogram(String n_program){
+        this.program = n_program;
     }
+    void setyear(int n_year){
+        this.year = n_year;
+    }
+    public  String getProgram(){
+        return program;
+    }
+    public int getYear(){
+        return year;
+    }
+ 
+}
